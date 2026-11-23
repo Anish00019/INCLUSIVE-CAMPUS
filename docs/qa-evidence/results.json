@@ -1,0 +1,3362 @@
+{
+  "auditDate": "2026-11-22",
+  "generatedAt": "2026-11-22T09:19:33.265009+00:00",
+  "verdict": "NOT PRODUCTION-READY",
+  "browser": "153.0.8010.0",
+  "unit": {
+    "passed": 55,
+    "failed": 0,
+    "files": [
+      {
+        "file": "tests/unit/api.test.js",
+        "cases": [
+          {
+            "name": "Supertest API boundaries (model stubs) returns the authenticated public user without a password hash",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects an expired JWT",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects a revoked JWT",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects inactive accounts",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects malformed signed subject IDs without a database cast",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) student cannot update confidential support requests",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) faculty cannot update confidential support requests",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) admin cannot update confidential support requests",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) faculty cannot read confidential accessibility profiles",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) admin cannot read confidential accessibility profiles",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) student cannot read another student accessibility profile",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) student cannot download an unowned confidential document",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) faculty cannot download an unowned confidential document",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) admin cannot download an unowned confidential document",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects forged owner/status in support submission",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects an empty message before looking up a recipient",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects a message over the maximum length",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects body-based NoSQL injection",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects query-based NoSQL injection",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) recipient ownership is required to mark a message read",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) does not allow an administrator to deactivate their own account",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects invalid calendar dates in attendance",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects duplicate students in one attendance session",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects UTF-8 passwords that bcrypt would silently truncate",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) requires independent encryption and authentication keys",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) omits permissive cross-origin credentials and disables caching",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects empty confidential document",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects oversized confidential document",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects forged PDF confidential document",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects forged PNG confidential document",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects binary text confidential document",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects unsupported confidential document",
+            "status": "passed"
+          },
+          {
+            "name": "Supertest API boundaries (model stubs) rejects path traversal in attachment filenames",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "file": "tests/unit/components.test.jsx",
+        "cases": [
+          {
+            "name": "modal keeps focus on the input as the parent rerenders while typing",
+            "status": "passed"
+          },
+          {
+            "name": "modal escape closes and restores focus to its invoker",
+            "status": "passed"
+          },
+          {
+            "name": "dialog traps keyboard focus without selecting hidden file inputs",
+            "status": "passed"
+          },
+          {
+            "name": "tabs implement arrow, Home and End keyboard controls",
+            "status": "passed"
+          },
+          {
+            "name": "attachment limits reject unsupported, empty and oversized documents",
+            "status": "passed"
+          },
+          {
+            "name": "CSV exports neutralise formula injection and escape embedded quotes",
+            "status": "passed"
+          },
+          {
+            "name": "calendar and phone validation handle boundaries",
+            "status": "passed"
+          },
+          {
+            "name": "dropdown keyboard navigation restores focus on Escape",
+            "status": "passed"
+          },
+          {
+            "name": "local-storage hook rejects corrupt shapes and does not confirm a failed write",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "file": "tests/unit/demo-service.test.js",
+        "cases": [
+          {
+            "name": "demo data boundary regressions rejects malformed registration in the service, not only the page",
+            "status": "passed"
+          },
+          {
+            "name": "demo data boundary regressions normalises registration email consistently",
+            "status": "passed"
+          },
+          {
+            "name": "demo data boundary regressions never returns another student for an unknown account",
+            "status": "passed"
+          },
+          {
+            "name": "demo data boundary regressions does not repopulate an intentionally empty student directory",
+            "status": "passed"
+          },
+          {
+            "name": "demo data boundary regressions rejects expired and malformed persisted sessions",
+            "status": "passed"
+          },
+          {
+            "name": "demo data boundary regressions rejects duplicate student roll numbers",
+            "status": "passed"
+          },
+          {
+            "name": "demo data boundary regressions rejects invalid student emails and numeric limits",
+            "status": "passed"
+          },
+          {
+            "name": "demo data boundary regressions keeps notification mutations scoped to the signed-in account",
+            "status": "passed"
+          },
+          {
+            "name": "demo data boundary regressions does not persist invalid support status or forged submission status",
+            "status": "passed"
+          },
+          {
+            "name": "demo data boundary regressions rejects empty and oversized messages",
+            "status": "passed"
+          },
+          {
+            "name": "demo data boundary regressions does not corrupt a saved record after a rejected storage write",
+            "status": "passed"
+          },
+          {
+            "name": "demo data boundary regressions attendance correction is idempotent and uses actual subject totals",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "file": "tests/unit/timetable.test.jsx",
+        "cases": [
+          {
+            "name": "timetable renders a loading state before its asynchronous data exists",
+            "status": "passed"
+          }
+        ]
+      }
+    ]
+  },
+  "nodeSecurity": {
+    "passed": 8,
+    "failed": 0,
+    "scope": "HTTP/crypto/model boundaries, no successful MongoDB CRUD"
+  },
+  "lint": {
+    "files": 101,
+    "errors": 0,
+    "warnings": 0
+  },
+  "workflows": [
+    "login validation and student sign-in",
+    "role-protected routes",
+    "submit support request with persistence",
+    "approve, assign staff and notify student",
+    "support update notification and mark all read",
+    "messages persist after reload",
+    "class attendance management",
+    "publish faculty assignment",
+    "student assignment submission",
+    "grading with saved feedback",
+    "publish accessible material metadata",
+    "institutional record management",
+    "filtered report export",
+    "text size, theme and preference persistence",
+    "profile editing and password update persist",
+    "mobile layouts and keyboard drawer dismissal",
+    "student registration and optional support preference persistence",
+    "no runtime errors throughout workflows"
+  ],
+  "smoke": [
+    "student /dashboard OK Welcome back, Aarav",
+    "student /academics OK Academic Overview",
+    "student /timetable OK Timetable",
+    "student /attendance OK Attendance",
+    "student /assignments OK Assignments",
+    "student /examinations OK Examination Schedule",
+    "student /study-materials OK Study Materials",
+    "student /support OK Accessibility Support Requests",
+    "student /support/track OK Track Support Requests",
+    "student /assistive-hub OK Assistive Learning Hub",
+    "student /profile OK My Profile",
+    "student /accessibility-settings OK Accessibility Settings",
+    "student /messages OK Messages",
+    "student /notifications OK Notifications",
+    "student /settings OK Settings",
+    "faculty /faculty OK Good morning, Meera",
+    "faculty /faculty/students OK My Students",
+    "faculty /faculty/attendance OK Attendance Management",
+    "faculty /faculty/assignments OK Assignments",
+    "faculty /faculty/materials OK Study Materials",
+    "faculty /faculty/requests OK Student Support Requests",
+    "support /support-admin OK Every request. A real opportunity.",
+    "support /support-admin/requests OK Support Management",
+    "support /support-admin/students OK Accessibility Profiles",
+    "support /support-admin/staff OK Support Team",
+    "support /support-admin/resources OK Assistive Resources",
+    "support /support-admin/reports OK Reports & Analytics",
+    "admin /admin OK A clearer view. A more inclusive campus.",
+    "admin /admin/students OK Student Management",
+    "admin /admin/users OK User Management",
+    "admin /admin/departments OK Departments",
+    "admin /admin/courses OK Courses & Programs",
+    "admin /admin/reports OK Reports & Analytics",
+    "admin /support-admin/requests OK Support Management"
+  ],
+  "controls": {
+    "checks": [
+      {
+        "name": "five public/404 pages: 40 viewport checks and axe",
+        "status": "pass"
+      },
+      {
+        "name": "unauthenticated direct student route redirects to login",
+        "status": "pass"
+      },
+      {
+        "name": "global search empty results and Escape",
+        "status": "pass"
+      },
+      {
+        "name": "global search keyboard navigation opens timetable",
+        "status": "pass"
+      },
+      {
+        "name": "timetable calendar export yields an ICS document",
+        "status": "pass"
+      },
+      {
+        "name": "sample academic transcript export contains transcript text",
+        "status": "pass"
+      },
+      {
+        "name": "sample attendance report downloads readable text",
+        "status": "pass"
+      },
+      {
+        "name": "sample material reader opens and downloads text (not binary media)",
+        "status": "pass"
+      },
+      {
+        "name": "request picker rejects unsupported extension",
+        "status": "pass"
+      },
+      {
+        "name": "request picker rejects oversized attachment",
+        "status": "pass"
+      },
+      {
+        "name": "request picker rejects empty attachment",
+        "status": "pass"
+      },
+      {
+        "name": "valid attachment metadata and accessible request dialog",
+        "status": "pass"
+      },
+      {
+        "name": "assignment search empty state and filter reset",
+        "status": "pass"
+      },
+      {
+        "name": "empty and whitespace messages cannot be submitted",
+        "status": "pass"
+      },
+      {
+        "name": "message HTML payload renders as inert text",
+        "status": "pass"
+      },
+      {
+        "name": "profile cancel discards unsaved fields",
+        "status": "pass"
+      },
+      {
+        "name": "wrong current password remains an error, not success",
+        "status": "pass"
+      },
+      {
+        "name": "clear notifications confirmation can be cancelled",
+        "status": "pass"
+      },
+      {
+        "name": "student directory search empty state and clear",
+        "status": "pass"
+      },
+      {
+        "name": "student duplicate roll remains a visible validation error",
+        "status": "pass"
+      },
+      {
+        "name": "quota failure leaves record unchanged and form open with error",
+        "status": "pass"
+      },
+      {
+        "name": "administrator adds a valid student academic record",
+        "status": "pass"
+      },
+      {
+        "name": "administrator edits student with Unicode and decimal GPA; survives refresh",
+        "status": "pass"
+      },
+      {
+        "name": "account menu arrows/End/Escape and focus restoration",
+        "status": "pass"
+      },
+      {
+        "name": "logout clears session and protects direct admin route",
+        "status": "pass"
+      },
+      {
+        "name": "expired session rejected after refresh",
+        "status": "pass"
+      },
+      {
+        "name": "no page runtime errors in secondary controls",
+        "status": "pass"
+      }
+    ],
+    "public": [
+      {
+        "route": "/",
+        "width": 320,
+        "scroll": 320,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "width": 375,
+        "scroll": 375,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "width": 425,
+        "scroll": 425,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "width": 768,
+        "scroll": 768,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "width": 1024,
+        "scroll": 1024,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "width": 1280,
+        "scroll": 1280,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "width": 1440,
+        "scroll": 1440,
+        "pass": true
+      },
+      {
+        "route": "/",
+        "width": 1920,
+        "scroll": 1920,
+        "pass": true
+      },
+      {
+        "route": "/about",
+        "width": 320,
+        "scroll": 320,
+        "pass": true
+      },
+      {
+        "route": "/about",
+        "width": 375,
+        "scroll": 375,
+        "pass": true
+      },
+      {
+        "route": "/about",
+        "width": 425,
+        "scroll": 425,
+        "pass": true
+      },
+      {
+        "route": "/about",
+        "width": 768,
+        "scroll": 768,
+        "pass": true
+      },
+      {
+        "route": "/about",
+        "width": 1024,
+        "scroll": 1024,
+        "pass": true
+      },
+      {
+        "route": "/about",
+        "width": 1280,
+        "scroll": 1280,
+        "pass": true
+      },
+      {
+        "route": "/about",
+        "width": 1440,
+        "scroll": 1440,
+        "pass": true
+      },
+      {
+        "route": "/about",
+        "width": 1920,
+        "scroll": 1920,
+        "pass": true
+      },
+      {
+        "route": "/login",
+        "width": 320,
+        "scroll": 320,
+        "pass": true
+      },
+      {
+        "route": "/login",
+        "width": 375,
+        "scroll": 375,
+        "pass": true
+      },
+      {
+        "route": "/login",
+        "width": 425,
+        "scroll": 425,
+        "pass": true
+      },
+      {
+        "route": "/login",
+        "width": 768,
+        "scroll": 768,
+        "pass": true
+      },
+      {
+        "route": "/login",
+        "width": 1024,
+        "scroll": 1024,
+        "pass": true
+      },
+      {
+        "route": "/login",
+        "width": 1280,
+        "scroll": 1280,
+        "pass": true
+      },
+      {
+        "route": "/login",
+        "width": 1440,
+        "scroll": 1440,
+        "pass": true
+      },
+      {
+        "route": "/login",
+        "width": 1920,
+        "scroll": 1920,
+        "pass": true
+      },
+      {
+        "route": "/register",
+        "width": 320,
+        "scroll": 320,
+        "pass": true
+      },
+      {
+        "route": "/register",
+        "width": 375,
+        "scroll": 375,
+        "pass": true
+      },
+      {
+        "route": "/register",
+        "width": 425,
+        "scroll": 425,
+        "pass": true
+      },
+      {
+        "route": "/register",
+        "width": 768,
+        "scroll": 768,
+        "pass": true
+      },
+      {
+        "route": "/register",
+        "width": 1024,
+        "scroll": 1024,
+        "pass": true
+      },
+      {
+        "route": "/register",
+        "width": 1280,
+        "scroll": 1280,
+        "pass": true
+      },
+      {
+        "route": "/register",
+        "width": 1440,
+        "scroll": 1440,
+        "pass": true
+      },
+      {
+        "route": "/register",
+        "width": 1920,
+        "scroll": 1920,
+        "pass": true
+      },
+      {
+        "route": "/unknown-audit-route",
+        "width": 320,
+        "scroll": 320,
+        "pass": true
+      },
+      {
+        "route": "/unknown-audit-route",
+        "width": 375,
+        "scroll": 375,
+        "pass": true
+      },
+      {
+        "route": "/unknown-audit-route",
+        "width": 425,
+        "scroll": 425,
+        "pass": true
+      },
+      {
+        "route": "/unknown-audit-route",
+        "width": 768,
+        "scroll": 768,
+        "pass": true
+      },
+      {
+        "route": "/unknown-audit-route",
+        "width": 1024,
+        "scroll": 1024,
+        "pass": true
+      },
+      {
+        "route": "/unknown-audit-route",
+        "width": 1280,
+        "scroll": 1280,
+        "pass": true
+      },
+      {
+        "route": "/unknown-audit-route",
+        "width": 1440,
+        "scroll": 1440,
+        "pass": true
+      },
+      {
+        "route": "/unknown-audit-route",
+        "width": 1920,
+        "scroll": 1920,
+        "pass": true
+      }
+    ],
+    "axe": [
+      {
+        "name": "public /",
+        "violations": []
+      },
+      {
+        "name": "public /about",
+        "violations": []
+      },
+      {
+        "name": "public /login",
+        "violations": []
+      },
+      {
+        "name": "public /register",
+        "violations": []
+      },
+      {
+        "name": "public /unknown-audit-route",
+        "violations": []
+      },
+      {
+        "name": "request dialog",
+        "violations": []
+      }
+    ],
+    "errors": [],
+    "network": []
+  },
+  "roleRouteMatrix": {
+    "browser": "153.0.8010.0",
+    "base": "http://localhost:5174",
+    "viewports": [
+      {
+        "role": "student",
+        "route": "/dashboard",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "student",
+        "route": "/dashboard",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "student",
+        "route": "/dashboard",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "student",
+        "route": "/dashboard",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "student",
+        "route": "/dashboard",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "student",
+        "route": "/dashboard",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "student",
+        "route": "/dashboard",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "student",
+        "route": "/dashboard",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "student",
+        "route": "/academics",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "student",
+        "route": "/academics",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "student",
+        "route": "/academics",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "student",
+        "route": "/academics",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "student",
+        "route": "/academics",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "student",
+        "route": "/academics",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "student",
+        "route": "/academics",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "student",
+        "route": "/academics",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "student",
+        "route": "/timetable",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "student",
+        "route": "/timetable",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "student",
+        "route": "/timetable",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "student",
+        "route": "/timetable",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "student",
+        "route": "/timetable",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "student",
+        "route": "/timetable",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "student",
+        "route": "/timetable",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "student",
+        "route": "/timetable",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "student",
+        "route": "/attendance",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "student",
+        "route": "/attendance",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "student",
+        "route": "/attendance",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "student",
+        "route": "/attendance",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "student",
+        "route": "/attendance",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "student",
+        "route": "/attendance",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "student",
+        "route": "/attendance",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "student",
+        "route": "/attendance",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "student",
+        "route": "/assignments",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "student",
+        "route": "/assignments",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "student",
+        "route": "/assignments",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "student",
+        "route": "/assignments",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "student",
+        "route": "/assignments",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "student",
+        "route": "/assignments",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "student",
+        "route": "/assignments",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "student",
+        "route": "/assignments",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "student",
+        "route": "/examinations",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "student",
+        "route": "/examinations",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "student",
+        "route": "/examinations",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "student",
+        "route": "/examinations",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "student",
+        "route": "/examinations",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "student",
+        "route": "/examinations",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "student",
+        "route": "/examinations",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "student",
+        "route": "/examinations",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "student",
+        "route": "/study-materials",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "student",
+        "route": "/study-materials",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "student",
+        "route": "/study-materials",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "student",
+        "route": "/study-materials",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "student",
+        "route": "/study-materials",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "student",
+        "route": "/study-materials",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "student",
+        "route": "/study-materials",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "student",
+        "route": "/study-materials",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "student",
+        "route": "/support",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "student",
+        "route": "/support",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "student",
+        "route": "/support",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "student",
+        "route": "/support",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "student",
+        "route": "/support",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "student",
+        "route": "/support",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "student",
+        "route": "/support",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "student",
+        "route": "/support",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "student",
+        "route": "/support/track",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "student",
+        "route": "/support/track",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "student",
+        "route": "/support/track",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "student",
+        "route": "/support/track",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "student",
+        "route": "/support/track",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "student",
+        "route": "/support/track",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "student",
+        "route": "/support/track",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "student",
+        "route": "/support/track",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "student",
+        "route": "/assistive-hub",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "student",
+        "route": "/assistive-hub",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "student",
+        "route": "/assistive-hub",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "student",
+        "route": "/assistive-hub",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "student",
+        "route": "/assistive-hub",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "student",
+        "route": "/assistive-hub",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "student",
+        "route": "/assistive-hub",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "student",
+        "route": "/assistive-hub",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "student",
+        "route": "/profile",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "student",
+        "route": "/profile",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "student",
+        "route": "/profile",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "student",
+        "route": "/profile",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "student",
+        "route": "/profile",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "student",
+        "route": "/profile",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "student",
+        "route": "/profile",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "student",
+        "route": "/profile",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "student",
+        "route": "/accessibility-settings",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "student",
+        "route": "/accessibility-settings",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "student",
+        "route": "/accessibility-settings",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "student",
+        "route": "/accessibility-settings",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "student",
+        "route": "/accessibility-settings",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "student",
+        "route": "/accessibility-settings",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "student",
+        "route": "/accessibility-settings",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "student",
+        "route": "/accessibility-settings",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "student",
+        "route": "/messages",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "student",
+        "route": "/messages",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "student",
+        "route": "/messages",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "student",
+        "route": "/messages",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "student",
+        "route": "/messages",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "student",
+        "route": "/messages",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "student",
+        "route": "/messages",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "student",
+        "route": "/messages",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "student",
+        "route": "/notifications",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "student",
+        "route": "/notifications",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "student",
+        "route": "/notifications",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "student",
+        "route": "/notifications",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "student",
+        "route": "/notifications",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "student",
+        "route": "/notifications",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "student",
+        "route": "/notifications",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "student",
+        "route": "/notifications",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "student",
+        "route": "/settings",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "student",
+        "route": "/settings",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "student",
+        "route": "/settings",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "student",
+        "route": "/settings",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "student",
+        "route": "/settings",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "student",
+        "route": "/settings",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "student",
+        "route": "/settings",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "student",
+        "route": "/settings",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/students",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/students",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/students",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/students",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/students",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/students",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/students",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/students",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/attendance",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/attendance",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/attendance",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/attendance",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/attendance",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/attendance",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/attendance",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/attendance",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/assignments",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/assignments",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/assignments",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/assignments",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/assignments",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/assignments",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/assignments",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/assignments",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/materials",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/materials",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/materials",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/materials",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/materials",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/materials",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/materials",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/materials",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/requests",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/requests",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/requests",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/requests",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/requests",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/requests",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/requests",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/requests",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "support",
+        "route": "/support-admin",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "support",
+        "route": "/support-admin",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "support",
+        "route": "/support-admin",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "support",
+        "route": "/support-admin",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "support",
+        "route": "/support-admin",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "support",
+        "route": "/support-admin",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "support",
+        "route": "/support-admin",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "support",
+        "route": "/support-admin",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/requests",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/requests",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/requests",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/requests",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/requests",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/requests",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/requests",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/requests",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/students",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/students",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/students",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/students",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/students",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/students",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/students",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/students",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/staff",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/staff",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/staff",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/staff",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/staff",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/staff",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/staff",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/staff",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/resources",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/resources",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/resources",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/resources",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/resources",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/resources",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/resources",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/resources",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/reports",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/reports",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/reports",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/reports",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/reports",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/reports",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/reports",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/reports",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "admin",
+        "route": "/admin",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "admin",
+        "route": "/admin",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "admin",
+        "route": "/admin",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "admin",
+        "route": "/admin",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "admin",
+        "route": "/admin",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "admin",
+        "route": "/admin",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "admin",
+        "route": "/admin",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "admin",
+        "route": "/admin",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "admin",
+        "route": "/admin/students",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "admin",
+        "route": "/admin/students",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "admin",
+        "route": "/admin/students",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "admin",
+        "route": "/admin/students",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "admin",
+        "route": "/admin/students",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "admin",
+        "route": "/admin/students",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "admin",
+        "route": "/admin/students",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "admin",
+        "route": "/admin/students",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "admin",
+        "route": "/admin/users",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "admin",
+        "route": "/admin/users",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "admin",
+        "route": "/admin/users",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "admin",
+        "route": "/admin/users",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "admin",
+        "route": "/admin/users",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "admin",
+        "route": "/admin/users",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "admin",
+        "route": "/admin/users",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "admin",
+        "route": "/admin/users",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "admin",
+        "route": "/admin/departments",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "admin",
+        "route": "/admin/departments",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "admin",
+        "route": "/admin/departments",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "admin",
+        "route": "/admin/departments",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "admin",
+        "route": "/admin/departments",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "admin",
+        "route": "/admin/departments",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "admin",
+        "route": "/admin/departments",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "admin",
+        "route": "/admin/departments",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "admin",
+        "route": "/admin/courses",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "admin",
+        "route": "/admin/courses",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "admin",
+        "route": "/admin/courses",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "admin",
+        "route": "/admin/courses",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "admin",
+        "route": "/admin/courses",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "admin",
+        "route": "/admin/courses",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "admin",
+        "route": "/admin/courses",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "admin",
+        "route": "/admin/courses",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "admin",
+        "route": "/admin/reports",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "admin",
+        "route": "/admin/reports",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "admin",
+        "route": "/admin/reports",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "admin",
+        "route": "/admin/reports",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "admin",
+        "route": "/admin/reports",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "admin",
+        "route": "/admin/reports",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "admin",
+        "route": "/admin/reports",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "admin",
+        "route": "/admin/reports",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      },
+      {
+        "role": "admin",
+        "route": "/support-admin/requests",
+        "width": 320,
+        "pass": true,
+        "scroll": 320,
+        "viewport": 320
+      },
+      {
+        "role": "admin",
+        "route": "/support-admin/requests",
+        "width": 375,
+        "pass": true,
+        "scroll": 375,
+        "viewport": 375
+      },
+      {
+        "role": "admin",
+        "route": "/support-admin/requests",
+        "width": 425,
+        "pass": true,
+        "scroll": 425,
+        "viewport": 425
+      },
+      {
+        "role": "admin",
+        "route": "/support-admin/requests",
+        "width": 768,
+        "pass": true,
+        "scroll": 768,
+        "viewport": 768
+      },
+      {
+        "role": "admin",
+        "route": "/support-admin/requests",
+        "width": 1024,
+        "pass": true,
+        "scroll": 1024,
+        "viewport": 1024
+      },
+      {
+        "role": "admin",
+        "route": "/support-admin/requests",
+        "width": 1280,
+        "pass": true,
+        "scroll": 1280,
+        "viewport": 1280
+      },
+      {
+        "role": "admin",
+        "route": "/support-admin/requests",
+        "width": 1440,
+        "pass": true,
+        "scroll": 1440,
+        "viewport": 1440
+      },
+      {
+        "role": "admin",
+        "route": "/support-admin/requests",
+        "width": 1920,
+        "pass": true,
+        "scroll": 1920,
+        "viewport": 1920
+      }
+    ],
+    "axe": [
+      {
+        "role": "student",
+        "route": "/dashboard",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/academics",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/timetable",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/attendance",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/assignments",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/examinations",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/study-materials",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/support",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/support/track",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/assistive-hub",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/profile",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/accessibility-settings",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/messages",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/notifications",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/settings",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/students",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/attendance",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/assignments",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/materials",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "faculty",
+        "route": "/faculty/requests",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "support",
+        "route": "/support-admin",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/requests",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/students",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/staff",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/resources",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "support",
+        "route": "/support-admin/reports",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "admin",
+        "route": "/admin",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "admin",
+        "route": "/admin/students",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "admin",
+        "route": "/admin/users",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "admin",
+        "route": "/admin/departments",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "admin",
+        "route": "/admin/courses",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "admin",
+        "route": "/admin/reports",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "admin",
+        "route": "/support-admin/requests",
+        "theme": "light",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/dashboard",
+        "theme": "dark",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/accessibility-settings",
+        "theme": "dark",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/support",
+        "theme": "dark",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/messages",
+        "theme": "dark",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/assistive-hub",
+        "theme": "dark",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/dashboard",
+        "theme": "contrast",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/accessibility-settings",
+        "theme": "contrast",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/support",
+        "theme": "contrast",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/messages",
+        "theme": "contrast",
+        "violations": []
+      },
+      {
+        "role": "student",
+        "route": "/assistive-hub",
+        "theme": "contrast",
+        "violations": []
+      }
+    ],
+    "errors": [],
+    "warnings": [],
+    "network": []
+  },
+  "representativeAxe": [
+    {
+      "route": "/",
+      "violations": []
+    },
+    {
+      "route": "/dashboard",
+      "violations": []
+    },
+    {
+      "route": "/accessibility-settings",
+      "violations": []
+    },
+    {
+      "route": "/support",
+      "violations": []
+    },
+    {
+      "route": "/messages",
+      "violations": []
+    },
+    {
+      "route": "/assistive-hub",
+      "violations": []
+    }
+  ],
+  "dependencyAudit": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "dependencies": {
+      "prod": 163,
+      "dev": 606,
+      "optional": 72,
+      "peer": 7,
+      "peerOptional": 0,
+      "total": 768
+    }
+  },
+  "performance": {
+    "mobile": {
+      "url": "http://localhost:5174/",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 88,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "formFactor": "mobile",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 375,
+        "height": 812,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 753.212,
+          "display": "0.8\u00a0s"
+        },
+        "largest-contentful-paint": {
+          "value": 2703.2120000000004,
+          "display": "2.7\u00a0s"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.1722969705495159,
+          "display": "0.172"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0\u00a0ms"
+        },
+        "speed-index": {
+          "value": 2818.634683999951,
+          "display": "2.8\u00a0s"
+        }
+      },
+      "errors": {},
+      "runWarnings": []
+    },
+    "desktop": {
+      "url": "http://localhost:5174/",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1440,
+        "height": 1000,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 204.091,
+          "display": "0.2\u00a0s"
+        },
+        "largest-contentful-paint": {
+          "value": 564.091,
+          "display": "0.6\u00a0s"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.005788045831655152,
+          "display": "0.006"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0\u00a0ms"
+        },
+        "speed-index": {
+          "value": 1335.6341581666816,
+          "display": "1.3\u00a0s"
+        }
+      },
+      "errors": {},
+      "runWarnings": []
+    },
+    "dashboard": {
+      "url": "http://localhost:5174/dashboard",
+      "lighthouseVersion": "13.6.0",
+      "scores": {
+        "performance": null,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 63
+      },
+      "formFactor": "desktop",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "throttlingMethod": "simulate",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1440,
+        "height": 1000,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 203.77929999999998,
+          "display": "0.2\u00a0s"
+        },
+        "largest-contentful-paint": {
+          "value": 523.7793,
+          "display": "0.5\u00a0s"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.07022268405701446,
+          "display": "0.07"
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0\u00a0ms"
+        },
+        "speed-index": {
+          "value": null,
+          "display": null
+        }
+      },
+      "errors": {
+        "speed-index": "Chrome didn't collect any screenshots during the page load. Please make sure there is content visible on the page, and then try re-running Lighthouse. (NO_SCREENSHOTS)",
+        "screenshot-thumbnails": "Chrome didn't collect any screenshots during the page load. Please make sure there is content visible on the page, and then try re-running Lighthouse. (NO_SCREENSHOTS)",
+        "final-screenshot": "Chrome didn't collect any screenshots during the page load. Please make sure there is content visible on the page, and then try re-running Lighthouse. (NO_SCREENSHOTS)",
+        "server-response-time": "No navigations insights found",
+        "metrics": "Chrome didn't collect any screenshots during the page load. Please make sure there is content visible on the page, and then try re-running Lighthouse. (NO_SCREENSHOTS)"
+      },
+      "runWarnings": []
+    }
+  },
+  "blocked": {
+    "mongodb": "MongoMemoryServer 7.0.14 binary download failed: fastdl.mongodb.org TLS ECONNRESET; no live MongoDB integration tests passed",
+    "browsers": "Branded Chrome/Edge, Firefox and Safari/WebKit unavailable; only packaged Chromium executed",
+    "assistiveTechnology": "No actual NVDA/JAWS/VoiceOver/TalkBack, microphone/audio or real-device verification",
+    "productionIntegration": "Frontend remains a local demo; no REST adapter or production deployment was validated"
+  }
+}

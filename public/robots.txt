@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /faculty
+Disallow: /support-admin
+Disallow: /profile
+Disallow: /messages
+Disallow: /notifications
